@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head lang="cn"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>让我来帮你百度一下 - 禾急稳</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <img src="img/arrow.png" id="arrow">
+    <div class="about" title="点我点我！" onclick="showAbout()">?</div>
+    <div id="msgbox" class="pop-box">
+        <span class="caption"> 禾急稳-专治各种伸手党</span>
+        <div class="thanks copyBaidu">
+            *本站与百度公司没有任何联系，baidu以及本站出现的百度公司Logo是百度公司的商标。
+        </div>
+        
+        <div class="readit" onclick="hideAbout();">我知道了</div>
+        
+    </div>
+	<div id="mask" class="mask"></div>
+
+    <div class="container">
+        <div>
+            <h1 class="title">需要我帮你<img src="img/baidu_logo.png" class="logo">么？哈哈</h1>
+            <span class="search-box">
+                <input type="text" class="search-text" id="kw">
+                <button class="btn" id="search">百度一下</button>
+            </span>
+        </div>
+        <div id="instructions">
+            输入你的问题，然后按百度一下
+        </div>
+        <div class="link" style="display: none" id="link">
+            <input type="text" readonly="" id="lmbtfyLink" class="copyable">
+            <div>
+                <a class="link_button" href="javascript:void(0);" id="copy" data-clipboard-target="lmbtfyLink">复制</a>
+                <a class="link_button" href="javascript:void(0);" id="go" target="_blank">预览</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a href="https://www.baidu.com">百度一下</a>·<a href="https://www.hejiwen.com">禾急稳-趣玩</a></p>
+        </div>
+    </div>
+
+<script src="style/ZeroClipboard.min.js"></script>
+<script src="style/jquery.min.js"></script>
+<script src="style/lmbtfy.js"></script>
+<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;"><object id="global-zeroclipboard-flash-bridge" name="global-zeroclipboard-flash-bridge" width="100%" height="100%" type="application/x-shockwave-flash" data="ZeroClipboard.swf"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="menu" value="false"><param name="wmode" value="transparent"><param name="flashvars" value="trustedOrigins=aptx4869.tech%2C%2F%2Faptx4869.tech%2Chttps%3A%2F%2Faptx4869.tech&amp;swfObjectId=global-zeroclipboard-flash-bridge"></object></div>
+</body>
+</html>
